@@ -16,3 +16,7 @@ let divs = document.querySelectorAll('div')
 function bubble(event) {
   console.log(this.firstChild.nodeValue.trim() + 'bubbled')
 }
+
+for (div of divs) {
+  div.addEventListener('click', bubble)
+}
