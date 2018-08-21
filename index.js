@@ -25,5 +25,8 @@ for (div of divs) {
 
 
 input.addEventListener('keydown', (event) => {
+  if(event.which === 71){
+    event.preventDefault()
+  }
   console.log(event)
 })
